@@ -37,7 +37,7 @@ Users are able to:
 
 ### Link
 
-- Live Site URL: [Demo](https://wasatad.github.io/Product-Page/)
+- Live Site URL: [Demo](https://audiophile-shop.herokuapp.com/)
 
 ## My process
 
