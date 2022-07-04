@@ -79,9 +79,7 @@ export default {
   width: 100%;
   height: 100vh;
 
-  // padding: 0px 15px;
   background-color: #fff;
-  // margin-bottom: 170px;
 }
 .mobile-inner {
   height: 1000px;

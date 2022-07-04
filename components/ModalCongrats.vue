@@ -128,9 +128,9 @@ beforeDestroy() {
   }
 
 
-.modal {
-max-height: 75vh;
-overflow-y: scroll !important;
+  .modal {
+  max-height: 75vh;
+  overflow-y: scroll !important;
   position: absolute;
   left: 50%;
 
@@ -152,11 +152,6 @@ overflow-y: scroll !important;
        overflow-y: scroll !important;
        height: 100%;
      }
-
- img {
-  // margin-bottom: 32px;
- }
-
 
   .modal-title {
     font-weight: 700;
@@ -188,17 +183,16 @@ overflow-y: scroll !important;
     .products {
       box-sizing: border-box;
       width: 60%;
-    background-color: $cultured;
+      background-color: $cultured;
       padding: 24px;
-      // display: flex;
        @media (max-width: 500px) {
-     width: 100%;
-     }
+      width: 100%;
+      }
   .item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-margin-bottom: 14px;
+    margin-bottom: 14px;
 
   }
   .left-side {
@@ -208,9 +202,6 @@ margin-bottom: 14px;
   }
 
   img {
-    // position: relative;
-    // top: 10px;
-      // margin-top: 8px;
       width: 26px;
     }
 
@@ -237,14 +228,14 @@ margin-bottom: 14px;
   .other-items {
     margin: 0 auto;
     text-align: center;
-  font-weight: 700;
-font-size: 12px;
-line-height: 16px;
-letter-spacing: -0.2px;
-color: rgba(0, 0, 0, 1);
-opacity: 0.5;
-cursor: pointer;
-  }
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.2px;
+    color: rgba(0, 0, 0, 1);
+    opacity: 0.5;
+    cursor: pointer;
+    }
   }
   .total {
     width: 40%;
@@ -260,27 +251,27 @@ cursor: pointer;
     .total-title {
 
       font-weight: 500;
-font-size: 15px;
-line-height: 160%;
-color: #FFFFFF;
-opacity: 0.5;
-    }
+      font-size: 15px;
+      line-height: 160%;
+      color: #FFFFFF;
+      opacity: 0.5;
+      }
     .total-price {
       font-weight: 700;
-font-size: 18px;
+      font-size: 18px;
 
-text-transform: uppercase;
-color: #FFFFFF;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      }
     }
   }
+
+    .btn-orange {
+
+    @include button-orange;
+    width: 100%;
+    }
   }
-
-.btn-orange {
-
-  @include button-orange;
-  width: 100%;
-}
-}
 }
 
 .congrats-modal-enter-active,

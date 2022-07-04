@@ -1,5 +1,4 @@
 import Vuex from "vuex";
-import Cookies from "js-cookie";
 
 let createStore = () => {
   return new Vuex.Store({
@@ -52,9 +51,7 @@ let createStore = () => {
       },
     },
     actions: {
-      nuxtServerInit(vueContext, context) {
-        // this.$cookies.removeAll()
-
+      nuxtServerInit(vueContext) {
         let cart = this.$cookies.get("cart");
 
         if (cart) {

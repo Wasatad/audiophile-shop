@@ -23,9 +23,7 @@ export default {
 *::after {
   box-sizing: border-box;
 }
-a {
-  text-decoration: none;
-}
+
 html {
   font-family: "Manrope", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -67,21 +65,18 @@ a {
   width: 100%;
   max-width: 1110px;
   margin: 0 auto;
-  /* padding: 0 15px; */
 }
 
 .no-scroll {
-  /* height: 100%; */
   overflow-y: hidden;
 }
 
 .mobile-menu-enter-active,
 .mobile-menu-leave-active {
-  /* transition: opacity 2s; */
   transition: transform 0.2s ease-in;
 }
-.mobile-menu-enter, .mobile-menu-leave-to /* .fade-leave-active до версии 2.1.8 */ {
-  /* opacity: 0; */
+.mobile-menu-enter,
+.mobile-menu-leave-to {
   transform: translateX(-100%);
 }
 </style>

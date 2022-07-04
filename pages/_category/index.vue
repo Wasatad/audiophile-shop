@@ -88,7 +88,6 @@ export default {
 
 .product-wrapper {
   padding: 0 15px;
-  // width: 100%;
   &:nth-child(even) {
     .product-card {
       @media (min-width: 900px) {

@@ -168,7 +168,6 @@
           <div class="summary">
             <div class="summary-title">summary</div>
             <div v-for="(item, id) in cart" :key="id" class="item">
-              <!-- <div class="item"> -->
               <div class="left-side">
                 <div class="product-image">
                   <img :src="item.image" alt="" />

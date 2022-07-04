@@ -93,8 +93,6 @@ export default {
       this.$store.commit("clearCart");
     },
     qty(name) {
-      // return this.$store.getters.productQty("xx99-mark-two-headphones");
-      // return this.productQty(name);
       return this.$store.state.cart.find((product) => product.slug === name)
         .qty;
     },
@@ -114,15 +112,8 @@ export default {
     total() {
       return this.$store.getters.total;
     },
-    // qty(name) {
-    //   // return this.$store.getters.productQty("xx99-mark-two-headphones");
-    //   // return this.productQty(name);
-    //   return this.$store.state.cart.find((product) => product.slug === name)
-    //     .qty;
-    // },
   },
   mounted() {
-    // this.showModal = true;
     setTimeout(() => {
       this.showModal = true;
     }, 200);
@@ -211,7 +202,6 @@ export default {
     align-items: center;
 
     img {
-      // margin-top: 8px;
       width: 60%;
     }
   }
@@ -293,7 +283,6 @@ export default {
 }
 .cart-modal-enter,
 .cart-modal-leave-to {
-  // transform: scale(0.5);
   opacity: 0;
 }
 </style>

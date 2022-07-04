@@ -93,7 +93,6 @@ export default {
     .inner-container {
       width: 100%;
       height: 100%;
-      // margin: 0 24px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -192,7 +191,7 @@ export default {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-//Cart animation
+//Cart icon animation
 .shake {
   animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
   transform: translate3d(0, 0, 0);

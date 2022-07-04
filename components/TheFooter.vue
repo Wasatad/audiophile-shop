@@ -75,7 +75,6 @@
 </template>
 <style scoped lang="scss">
 .footer-wrapper {
-  // width: 100%;
   background-color: $smokyBlack;
   min-height: 360px;
   padding: 0 15px 24px;

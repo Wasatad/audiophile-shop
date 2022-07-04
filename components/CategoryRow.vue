@@ -81,7 +81,6 @@ export default {
 
 <style scoped lang="scss">
 .row-wrapper {
-  // width: 100%;
   padding: 0 15px;
   margin-bottom: 170px;
   @media (max-width: 700px) {

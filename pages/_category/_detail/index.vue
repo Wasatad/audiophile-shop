@@ -133,7 +133,6 @@
 </template>
 
 <script>
-import mapState from "vuex";
 export default {
   validate(data) {
     return (
@@ -166,7 +165,7 @@ export default {
       let productName = this.$nuxt.context.route.params.detail;
       this.$store.commit("addToCart", { productName, qty });
 
-      //Cart animation
+      //Cart icon shake animation
       let cart = document.querySelector(".cart-icon");
       cart.classList.add("shake");
       setTimeout(() => {
@@ -238,7 +237,6 @@ export default {
         width: 500px;
         position: absolute;
         z-index: 3;
-        // top: -20px;
       }
       .detail-product-shadow {
         position: absolute;
@@ -417,7 +415,6 @@ export default {
       width: 100%;
       height: 50%;
       @media (max-width: 445px) {
-        // height: 240px;
         width: 100%;
       }
       img {
@@ -494,7 +491,6 @@ export default {
       border-radius: 8px;
 
       min-height: 320px;
-      // width: 540px;
 
       display: flex;
       justify-content: center;
@@ -509,13 +505,6 @@ export default {
         width: 100%;
         max-width: 260px;
       }
-
-      // @media (max-width: 1200px) {
-      //   width: 100%;
-      // }
-      // @media (max-width: 450px) {
-      //   max-height: 450px;
-      // }
     }
     .product-name {
       text-align: center;
