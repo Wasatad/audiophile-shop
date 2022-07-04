@@ -1,4 +1,4 @@
-# Product Page
+# Audiophile e-commerce website
 
 This is a solution to the [Audiophile e-commerce website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/audiophile-ecommerce-website-C8cuSd_wx).
 
@@ -33,7 +33,7 @@ Users are able to:
 
 ### Screenshot
 
-![image](src/assets/audiophile-ecommerce-preview.png)
+![image](@/src/assets/audiophile-ecommerce-preview.png)
 
 ### Link
 
