@@ -1,0 +1,200 @@
+//COLORS
+$rawSienna: rgba(216, 125, 74, 1);
+$lightSalmon: rgba(251, 175, 133, 1);
+$smokyBlack: rgba(16, 16, 16, 1);
+$cultured: rgba(241, 241, 241, 1);
+$milkWhite: rgba(250, 250, 250, 1);
+
+//BUTTONS
+@mixin button-orange {
+  background-color: $rawSienna;
+  padding: 15px 30px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.4em;
+  text-transform: uppercase;
+  border: none;
+  transition: 0.3s;
+  cursor: pointer;
+  &:hover {
+    background-color: $lightSalmon;
+  }
+}
+
+@mixin button-black {
+  position: relative;
+  padding: 15px 30px;
+  background-color: rgba(255, 255, 255, 0);
+  color: black;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.4em;
+  text-transform: uppercase;
+  border: none;
+  transition: 0.3s;
+  cursor: pointer;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid black;
+  }
+  &:hover {
+    background-color: black;
+    color: #fff;
+  }
+}
+
+@mixin button-black-filled {
+  position: relative;
+  padding: 15px 30px;
+  background-color: rgba(0, 0, 0, 1);
+  color: white;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.4em;
+  text-transform: uppercase;
+  border: none;
+  transition: 0.3s;
+  cursor: pointer;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  &:hover {
+    background-color: rgba(76, 76, 76, 1);
+    color: #fff;
+  }
+}
+
+@mixin button-borderless {
+  display: flex;
+  gap: 10px;
+  padding: 15px 30px;
+  background-color: rgba(255, 255, 255, 0);
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.4em;
+  text-transform: uppercase;
+  border: none;
+  transition: 0.3s;
+  cursor: pointer;
+  &:after {
+    content: url("@/assets/img/orange-arrow.svg");
+    margin-top: 1px;
+    background-repeat: no-repeat;
+  }
+  &:hover {
+    color: $rawSienna;
+  }
+}
+
+//FORM ELEMENTS
+@mixin checkout-input {
+  box-sizing: border-box;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 1);
+  padding: 17px 0 17px 17px;
+  border: 1px solid rgba(207, 207, 207, 1);
+  border-radius: 8px;
+  // width: 300px;
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
+  &:focus {
+    border: 1px solid $rawSienna;
+    caret-color: $rawSienna;
+  }
+  &:invalid {
+    border: 2px solid #cd2c2c;
+  }
+}
+
+@mixin checkout-radio {
+  display: flex;
+  // justify-content: flex-start;
+  gap: 14px;
+  border: 1px solid rgba(207, 207, 207, 1);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 1);
+  padding: 17px 0 15px 17px;
+  // width: 100%;
+
+  border-radius: 8px;
+
+  input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    width: 24px;
+  }
+
+  input[type="radio"]:after {
+    content: url("@/assets/img/radio-disabled-dot.svg");
+  }
+
+  input[type="radio"]:checked:after {
+    content: url("@/assets/img/radio-active-dot.svg");
+  }
+}
+
+//COUNTER
+@mixin product-counter {
+  background-color: $cultured;
+  height: 48px;
+  max-width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 13px;
+  input {
+    background-color: $cultured;
+    max-width: 40px;
+    text-align: center;
+  }
+  .minus {
+    background: url("@/assets/img/minus-disabled.svg") no-repeat center;
+    width: 7px;
+    height: 7px;
+    cursor: pointer;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .minus.active {
+    background: url("@/assets/img/minus-active.svg") no-repeat center;
+  }
+  .plus {
+    background: url("@/assets/img/plus-disabled.svg") no-repeat center;
+    width: 7px;
+    height: 7px;
+    cursor: pointer;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .plus.active {
+    background: url("@/assets/img/plus-active.svg") no-repeat center;
+  }
+}
