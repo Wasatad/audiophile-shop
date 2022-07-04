@@ -59,7 +59,7 @@ let createStore = () => {
         }
 
         return this.$axios
-          .get(process.env.baseUrl + "/products.json")
+          .get(process.env.firebaseUrl + "/products.json")
           .then((res) => {
             for (const key in res.data) {
               vueContext.state.products.push({ ...res.data[key], id: key });

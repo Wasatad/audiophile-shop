@@ -40,6 +40,10 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [],
 
+  axios: {
+    baseURL: process.env.BASE_URL || "http://localhost:3000/",
+  },
+
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     "@nuxtjs/style-resources",
@@ -54,7 +58,7 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
   env: {
-    baseUrl:
+    firebaseUrl:
       "https://audiophile-ecommerce-website-default-rtdb.europe-west1.firebasedatabase.app",
   },
 };
