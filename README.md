@@ -33,7 +33,7 @@ Users are able to:
 
 ### Screenshot
 
-![image](@/src/assets/audiophile-ecommerce-preview.png)
+![image](src/assets/img/audiophile-ecommerce-preview.png)
 
 ### Link
 
