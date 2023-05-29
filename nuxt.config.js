@@ -41,7 +41,8 @@ export default {
   buildModules: [],
 
   axios: {
-    baseURL: process.env.BASE_URL || "http://localhost:3000/",
+//     baseURL: process.env.BASE_URL || "http://localhost:3000/",
+    baseURL: process.env.BASE_URL || "http://80.87.110.223:3000/",
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
