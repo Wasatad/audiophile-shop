@@ -2,7 +2,10 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   ssr: true,
   target: "server",
-
+  server: {
+    host: '0'
+  }
+  
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: "Audiophile Shop",
